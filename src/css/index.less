@@ -1,0 +1,387 @@
+@import "../css/StyleDepend/mReset.css";
+
+#bpindexwrap {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  padding: 28px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // background: linear-gradient(to right, #0088f6, #18caf8);
+
+  .index-left {
+    width: 366px;
+  }
+
+  .index-mid {
+    width: 366px;
+    padding: 0 20px;
+  }
+
+  .index-right {}
+
+  .md-class-intro {
+    width: 366px;
+    height: 270px;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+
+  .top-bx {
+    height: 100px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    padding-left: 30px;
+    background-image: linear-gradient(90deg,
+        #f6d365 0%,
+        #fda085 100%),
+      linear-gradient(#000000,
+        #000000);
+    background-blend-mode: normal,
+      normal;
+    border-radius: 10px 10px 0px 0px;
+
+    img {
+      width: 60px;
+      height: 60px;
+      margin-right: 14px;
+      object-fit: cover;
+    }
+
+    .top-right-intro {
+      color: #fff;
+    }
+
+    .class-name {
+      padding-bottom: 10px;
+      font-size: 20px;
+    }
+
+  }
+
+  .class-slogan {
+    height: 56px;
+    margin: 0 18px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e9e9e9;
+
+    span {
+      text-align: center;
+    }
+  }
+
+  .class-detail-intro {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 18px;
+    padding-top: 28px;
+
+    .det-item {
+      text-align: center;
+
+      .top-item {
+        color: #999999;
+      }
+
+      .bot-item {
+        margin-top: 14px;
+      }
+
+      .red-num {
+        font-size: 18px;
+        color: #ea4848;
+      }
+    }
+  }
+
+  .time-bx {
+    height: 200px;
+    margin-top: 20px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    .time-link {
+      display: inline-block;
+      align-items: center;
+      color: #fff;
+    }
+
+    .time-show {
+      font-size: 54px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .date-one {
+      display: inline-block;
+      padding: 0 20px;
+    }
+
+    .tem-show {
+      // display: inline-block;
+      // font-size: 22px;
+      // line-height: 3;
+    }
+
+    .tianqi-show {
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+      line-height: 3;
+    }
+
+    .tainqi-bx {
+      padding: 0 24px;
+    }
+
+    .tianqi-icon {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      vertical-align: middle;
+    }
+
+    .tep-show {}
+
+    .tem-item {
+      // display: inline-block;
+      // padding: 0 4px;
+    }
+  }
+
+  .gonggao-bx {
+    position: relative;
+    height: 232px;
+    padding-top: 63px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background-position: 22px bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  .gonggao-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    margin-bottom: 20px;
+    width: 85px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .gonggao-text {
+    font-size: 18px;
+    padding: 0 10px;
+    line-height: 1.2;
+  }
+
+  .xinwen-bx {
+    height: 360px;
+    border-radius: 10px;
+    background-color: #fff;
+
+    .xw-title {
+      height: 44px;
+      padding: 0 20px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+
+      .xw-icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+      }
+
+      span {
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+
+    .xw-show-list {
+      padding: 0 20px;
+      overflow-y: auto;
+      height: 316px;
+
+      .xw-show-item {
+        display: flex;
+        align-items: center;
+        line-height: 1.4;
+        padding: 16px 0;
+        border-bottom: 1px dashed #ddd;
+
+        .xw-img {
+          width: 80px;
+          height: 70px;
+          object-fit: cover;
+          border-radius: 4px;
+          margin-right: 10px;
+
+        }
+
+        .top-det {
+          display: flex;
+          height: 44px;
+        }
+
+        .fl-icon {
+          width: 30px;
+          height: 20px;
+          vertical-align: middle;
+        }
+
+        .two-ellipsis {
+          flex: 1;
+        }
+
+        .bot-det {
+          margin-top: 4px;
+          color: #999;
+        }
+
+        .xw-time {
+          margin-right: 20px;
+        }
+      }
+
+    }
+  }
+
+  .swiper-bx {
+    margin-top: 20px;
+    padding: 20px;
+    height: 360px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .jieshao-text {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 0 10px;
+        height: 34px;
+        line-height: 34px;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #fff;
+      }
+    }
+  }
+
+  .zdb-bx {
+
+    width: 371px;
+    height: 743px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 30px 20px 20px 20px;
+
+    .zdb-bx-link {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .title-img {
+      margin-bottom: 11px;
+      text-align: center;
+
+      img {
+        display: inline-block;
+      }
+    }
+
+    .zdb-list {
+      height: 645px;
+      overflow-y: auto;
+      box-sizing: border-box;
+      border-radius: 6px;
+      background-color: #fff;
+      padding: 14px;
+
+      .zdb-item {
+        display: flex;
+        padding: 6px;
+        justify-content: space-between;
+        align-items: center;
+
+        .jiangpai {
+          width: 19px;
+          height: auto;
+          object-fit: cover;
+          text-align: center;
+          font-size: 18px;
+        }
+
+        .left {
+          display: flex;
+          align-items: center;
+        }
+
+        .student-head {
+          margin: 0 10px;
+        }
+
+        .student-head {
+          width: 30px;
+          height: 30px;
+          object-fit: cover;
+          border-radius: 100%;
+        }
+
+        .right {
+          color: #10b4f7;
+        }
+      }
+    }
+  }
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 10px !important;
+  right: 20px !important;
+  left: auto !important;
+  width: 20% !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
