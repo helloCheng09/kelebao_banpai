@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<!-- /public/jiesong -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- <link href="../img/logo.png" rel="icon" sizes="32x32"> -->
+    <title>本地-班牌首页</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../js/JsDepend/layui/css/layui.css">
+    <link rel="stylesheet" href="../css/StyleDepend/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css?t=<?php echo time();?>">
+    <link rel="stylesheet" href="../css/index.css?t=<?php echo time();?>">
+    <link rel="stylesheet" href="../css/StyleDepend/wall-e.css?t=<?php echo time();?>">
+    <link rel="stylesheet" href="
+    ../css/StyleDepend/f2.css" />
+
+    <!-- js -->
+    <script src="../js/JsDepend/jQuery.min.js" type="text/javascript"></script>
+    <script src="../js/wall-e.js?t=<?php echo time();?>" type="text/javascript"></script>
+    <script>
+        /*Fixing iframe window.innerHeight 0 issue in Safari*/
+        document.body.clientHeight;
+    </script>
+
+    <script src="../js/JsDepend/f2.js"></script>
+
+    <!-- 在 PC 上模拟 touch 事件 -->
+    <script src="../js/JsDepend/f2.touch.js"></script>
+
+</head>
+
+<body>
+    <div id="signinwrap" class="" style="background-image: url(../img/bgbg.png)">
+        <div class="signin-left">
+            <div class="top-one">
+                <div class="top-bx">
+                    <img src="../img/school.png" alt="">
+                    <div class="top-right-intro">
+                        <div class="class-name">高一（1）班</div>
+                        <div class="school-name">班主任 : 李璐 </div>
+                    </div>
+                </div>
+                <div class="time-show">
+                    <div class="data-item">
+                        15 : 28
+                    </div>
+                    <div class="data-show">
+                        <div class="bot-data">
+                            2019年05月18日
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-bx">
+                <div class="det-item">
+                    <div class="det-title">
+                        迟到人员名单( 45人 )
+                    </div>
+                    <div class="list-show">
+                        <span class="name-tag orang-bg">
+                            王小明
+                        </span> <span class="name-tag orang-bg">
+                            王小明
+                        </span> <span class="name-tag orang-bg">
+                            王小明
+                        </span> <span class="name-tag orang-bg">
+                            王小明
+                        </span> <span class="name-tag orang-bg">
+                            王小明
+                        </span> <span class="name-tag orang-bg">
+                            王小明
+                        </span>
+                        <span class="name-tag orang-bg">
+                            王小明
+                        </span> <span class="name-tag orang-bg">
+                            王小明
+                        </span> <span class="name-tag orang-bg">
+                            王小明
+                        </span> <span class="name-tag orang-bg">
+                            王小明
+                        </span> <span class="name-tag orang-bg">
+                            王小明
+                        </span> <span class="name-tag orang-bg">
+                            王小明
+                        </span>
+                    </div>
+                </div>
+                <div class="det-item">
+                    <div class="det-title">
+                        请假人员名单( 45人 )
+                    </div>
+                    <div class="list-show">
+                        <span class="name-tag purple-bg">
+                            王小明
+                        </span>
+                    </div>
+                </div>
+                <div class="det-item">
+                    <div class="det-title">
+                        未到人员名单( 45人 )
+                    </div>
+                    <div class="list-show">
+                        <span class="name-tag darkorang-bg">
+                            王小明
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-wrapper">
+                <canvas id="mountNode" style="width: 378px;height: 277px;margin: 0 auto;"></canvas>
+            </div>
+            <style>
+                .panel button {
+                    border-radius: 4px;
+                }
+                
+                .panel button.active {
+                    color: #fff;
+                    background-color: #1890ff;
+                    border-color: #1890ff;
+                }
+            </style>
+        </div>
+        <div class="signing-right">
+            <img class="title-img" src="../img/bg11.png" alt="">
+            <div class="r-small-pics">
+                <div class="item-pic">
+                    <img src="../img/pic7.png" alt="">
+                    <div class="name">王大力</div>
+                    <div class="time">
+                        2019-05-21 19:22:23
+                    </div>
+                </div>
+                <div class="item-pic">
+                    <img src="../img/pic7.png" alt="">
+                    <div class="name">王大力</div>
+                    <div class="time">
+                        2019-05-21 19:22:23
+                    </div>
+                </div>
+                <div class="item-pic">
+                    <img src="../img/pic7.png" alt="">
+                    <div class="name">王大力</div>
+                    <div class="time">
+                        2019-05-21 19:22:23
+                    </div>
+                </div>
+                <div class="item-pic">
+                    <img src="../img/pic7.png" alt="">
+                    <div class="name">王大力</div>
+                    <div class="time">
+                        2019-05-21 19:22:23
+                    </div>
+                </div>
+                <div class="item-pic">
+                    <img src="../img/pic7.png" alt="">
+                    <div class="name">王大力</div>
+                    <div class="time">
+                        2019-05-21 19:22:23
+                    </div>
+                </div>
+                <div class="item-pic">
+                    <img src="../img/pic7.png" alt="">
+                    <div class="name">王大力</div>
+                    <div class="time">
+                        2019-05-21 19:22:23
+                    </div>
+                </div>
+                <div class="item-pic">
+                    <img src="../img/pic7.png" alt="">
+                    <div class="name">王大力</div>
+                    <div class="time">
+                        2019-05-21 19:22:23
+                    </div>
+                </div>
+                <div class="item-pic">
+                    <img src="../img/pic7.png" alt="">
+                    <div class="name">王大力</div>
+                    <div class="time">
+                        2019-05-21 19:22:23
+                    </div>
+                </div>
+                <div class="item-pic">
+                    <img src="../img/pic7.png" alt="">
+                    <div class="name">王大力</div>
+                    <div class="time">
+                        2019-05-21 19:22:23
+                    </div>
+                </div>
+                <div class="item-pic">
+                    <img src="../img/pic7.png" alt="">
+                    <div class="name">王大力</div>
+                    <div class="time">
+                        2019-05-21 19:22:23
+                    </div>
+                </div>
+                <div class="item-pic">
+                    <img src="../img/pic7.png" alt="">
+                    <div class="name">王大力</div>
+                    <div class="time">
+                        2019-05-21 19:22:23
+                    </div>
+                </div>
+                <div class="item-pic">
+                    <img src="../img/pic7.png" alt="">
+                    <div class="name">王大力</div>
+                    <div class="time">
+                        2019-05-21 19:22:23
+                    </div>
+                </div>
+                <div class="item-pic">
+                    <img src="../img/pic7.png" alt="">
+                    <div class="name">王大力</div>
+                    <div class="time">
+                        2019-05-21 19:22:23
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- js -->
+<script type="text/javascript" src="../js/JsDepend/swiper.min.js"></script>
+<script type="text/javascript" src="../js/JsDepend/layui/layui.all.js"></script>
+<script src="../js/index.js?t=<?php echo time();?>" type="text/javascript"></script>

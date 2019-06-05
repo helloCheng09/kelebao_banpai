@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<!-- /public/jiesong -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- <link href="../img/logo.png" rel="icon" sizes="32x32"> -->
+    <title>本地-班级详情</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../js/JsDepend/layui/css/layui.css">
+    <link rel="stylesheet" href="../css/StyleDepend/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css?t=<?php echo time();?>">
+    <link rel="stylesheet" href="../css/index.css?t=<?php echo time();?>">
+    <link rel="stylesheet" href="../css/StyleDepend/wall-e.css?t=<?php echo time();?>">
+    <!-- js -->
+    <script src="../js/JsDepend/jQuery.min.js" type="text/javascript"></script>
+    <script src="../js/wall-e.js?t=<?php echo time();?>" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="picwrap" class="" style="background-image: url(../img/bgbg.png)">
+        <div class="pic-bx">
+            <div class="top-one">
+                <div class="top-bx">
+                    <img src="../img/school.png" alt="">
+                    <div class="top-right-intro">
+                        <div class="class-name">高一（1）班</div>
+                        <div class="school-name">班主任 : 李璐 </div>
+                    </div>
+                </div>
+                <div class="time-show">
+                    <div class="data-item">
+                        15 : 28
+                    </div>
+                    <div class="data-show">
+                        <div class="top-data">
+                            星期三
+                        </div>
+                        <div class="bot-data">
+                            2019年05月18日
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 照片box -->
+            <div class="pic-tab-con">
+                <div class="layui-tab layui-tab-card">
+                    <ul class="layui-tab-title">
+                        <li class="layui-this">校园生活</li>
+                        <li>班级荣誉</li>
+                        <li>学生作品</li>
+                        <li>班级风采</li>
+                    </ul>
+                    <div class="layui-tab-content" style="height: 100px;">
+                        <div class="layui-tab-item layui-show">
+                            <ul class="flow-default" id="LAY_demo1">
+                                <!-- <li>
+                                    <img src="../img/pic4.png" alt="">
+                                    <div class="des-text">班级荣誉</div>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="layui-tab-item">2</div>
+                        <div class="layui-tab-item">5</div>
+                        <div class="layui-tab-item">6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- js -->
+<script type="text/javascript" src="../js/JsDepend/swiper.min.js"></script>
+<script type="text/javascript" src="../js/JsDepend/layui/layui.all.js"></script>
+<script src="../js/index.js?t=<?php echo time();?>" type="text/javascript"></script>
+<script>
+    //注意：选项卡 依赖 element 模块，否则无法进行功能性操作
+    layui.use('element', function() {
+        var element = layui.element;
+    });
+</script>

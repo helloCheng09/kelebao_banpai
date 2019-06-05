@@ -1,5 +1,41 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
-  background-color: #f1f1f1;
+  background-color: linear-gradient(to right, #0088f6, #18caf8);
   color: #333;
+}
+.class-detail-intro {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 18px;
+  padding-top: 28px;
+}
+.class-detail-intro .det-item {
+  text-align: center;
+}
+.class-detail-intro .det-item .top-item {
+  color: #999999;
+}
+.class-detail-intro .det-item .bot-item {
+  margin-top: 14px;
+  font-size: 18px;
+}
+.class-detail-intro .det-item .red-num {
+  color: #ea4848;
+}
+.class-detail-intro .det-item .blue-num {
+  color: #1dabf7;
+}
+#newswrap,
+#bpindexwrap,
+#classwrap,
+#signinwrap,
+#picwrap {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  padding: 28px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
