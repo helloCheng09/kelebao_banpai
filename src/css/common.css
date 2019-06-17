@@ -29,7 +29,8 @@ body {
 #bpindexwrap,
 #classwrap,
 #signinwrap,
-#picwrap {
+#picwrap,
+#chatindex {
   position: relative;
   display: flex;
   min-height: 100vh;
