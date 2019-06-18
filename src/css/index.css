@@ -13,7 +13,7 @@
   border-radius: 10px;
 }
 #bpindexwrap .top-bx {
-  height: 100px;
+  height: 120px;
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -37,7 +37,7 @@
   font-size: 20px;
 }
 #bpindexwrap .class-slogan {
-  height: 56px;
+  height: 64px;
   margin: 0 18px;
   display: flex;
   align-items: center;
@@ -110,8 +110,8 @@
   object-fit: cover;
 }
 #bpindexwrap .gonggao-text {
-  font-size: 18px;
-  padding: 0 10px;
+  font-size: 16px;
+  padding: 0 36px;
   line-height: 1.2;
 }
 #bpindexwrap .mid-new-bx {
@@ -151,7 +151,7 @@
 #bpindexwrap .xinwen-bx .xw-show-list {
   padding: 0 20px;
   overflow-y: auto;
-  height: 316px;
+  height: 408px;
 }
 #bpindexwrap .xinwen-bx .xw-show-list .xw-show-item {
   display: flex;
@@ -188,7 +188,7 @@
 }
 #bpindexwrap .swiper-bx {
   padding: 20px;
-  height: 552px;
+  height: 550px;
   box-sizing: border-box;
   background-color: #fff;
   border-radius: 10px;
@@ -219,7 +219,7 @@
   color: #fff;
 }
 #bpindexwrap .zdb-bx {
-  width: 371px;
+  width: 455px;
   height: 1024px;
   background-size: cover;
   background-position: center;
@@ -328,7 +328,7 @@
   background-position: right bottom;
 }
 #classwrap .class-det .top-bx {
-  height: 100px;
+  height: 120px;
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -336,8 +336,8 @@
   border-radius: 10px 10px 0px 0px;
 }
 #classwrap .class-det .top-bx img {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   margin-right: 14px;
   object-fit: cover;
 }
