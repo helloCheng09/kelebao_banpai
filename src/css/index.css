@@ -3,7 +3,7 @@
   width: 420px;
 }
 #bpindexwrap .index-mid {
-  width: 366px;
+  width: 932px;
   padding: 0 20px;
 }
 #bpindexwrap .md-class-intro {
@@ -47,7 +47,7 @@
   text-align: center;
 }
 #bpindexwrap .time-bx {
-  height: 250px;
+  height: 292px;
   margin-top: 20px;
   background-position: center;
   background-size: cover;
@@ -114,9 +114,20 @@
   padding: 0 10px;
   line-height: 1.2;
 }
-#bpindexwrap .xinwen-bx {
-  height: 360px;
+#bpindexwrap .mid-new-bx {
+  display: flex;
+  margin-top: 20px;
+}
+#bpindexwrap .qd-xf-bx {
+  width: 544px;
   border-radius: 10px;
+  background-color: #000;
+}
+#bpindexwrap .xinwen-bx {
+  flex: 1;
+  height: 453px;
+  border-radius: 10px;
+  margin-left: 20px;
   background-color: #fff;
 }
 #bpindexwrap .xinwen-bx .xw-title {
@@ -176,9 +187,8 @@
   margin-right: 20px;
 }
 #bpindexwrap .swiper-bx {
-  margin-top: 20px;
   padding: 20px;
-  height: 360px;
+  height: 552px;
   box-sizing: border-box;
   background-color: #fff;
   border-radius: 10px;
@@ -210,7 +220,7 @@
 }
 #bpindexwrap .zdb-bx {
   width: 371px;
-  height: 743px;
+  height: 1024px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -231,7 +241,7 @@
   display: inline-block;
 }
 #bpindexwrap .zdb-bx .zdb-list {
-  height: 645px;
+  height: 927px;
   overflow-y: auto;
   box-sizing: border-box;
   border-radius: 6px;
