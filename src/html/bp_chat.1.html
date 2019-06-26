@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<!-- /public/jiesong -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- <link href="../img/logo.png" rel="icon" sizes="32x32"> -->
+    <title>本地-班牌首页</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../js/JsDepend/layui/css/layui.css">
+    <!-- js -->
+    <script src="../js/JsDepend/jQuery.min.js" type="text/javascript"></script>
+    <script src="../js/wall-e.js?t=<?php echo time();?>" type="text/javascript"></script>
+</head>
+
+<body>
+    <textarea id="demo" style="display: none;"></textarea>
+
+    <button>加入空格</button>
+
+
+</body>
+
+</html>
+<!-- js -->
+<script type="text/javascript" src="../js/JsDepend/layui/layui.all.js"></script>
+<script>
+    layui.use('layedit', function() {
+        var layedit = layui.layedit;
+        var index = layedit.build('demo'); //建立编辑器
+        $('button').click(function() {
+            var html = `
+            <span class="kong">
+                 <input type="text" name="1">
+             </span>
+        `
+            $('#demo').val(html)
+            console.log(layedit.getContent(index))
+        })
+
+    });
+</script>

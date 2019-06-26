@@ -137,7 +137,7 @@
                     //模拟数据插入
                     setTimeout(function() {
                         var lis = [];
-                        for (var i = 0; i < 18; i++) {
+                        for (var i = 0; i < 20; i++) {
                             lis.push('<li>' + '<img src="../img/pic3.png" alt=""><div class="des-text">班级荣誉</div>' + '</li>')
                         }
 

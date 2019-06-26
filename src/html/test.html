@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/JsDepend/jQuery.min.js" type="text/javascript"></script>
+</head>
+<style>
+    .container {
+        width: 200px;
+        height: 100px;
+        padding: 10px;
+        text-align: left;
+        background: lightblue;
+        color: #fff
+    }
+    
+    .kong {
+        display: inline-block;
+        position: relative;
+        width: 18px;
+        height: 18px;
+        overflow: hidden;
+        vertical-align: bottom;
+    }
+    
+    .kong input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        -webkit-appearance: none;
+        /* outline: none; */
+        text-align: center;
+        line-height: 18px;
+        color: red;
+    }
+    
+    .timu {
+        padding: 10px;
+        width: 400px;
+        height: 300px;
+        background-color: red;
+        color: #fff;
+    }
+</style>
+
+<body>
+
+    <textarea class="container" value="">
+    </textarea>
+    <div class="timu">
+
+    </div>
+    <!-- 这是填空题，问题是
+        <span class="kong">
+            <input type="text" name="1">
+        </span> -->
+
+
+    <!-- <button>加入空格</button> -->
+</body>
+
+</html>
+
+<script>
+    var mytextbx = $('textarea');
+    mytextbx.on("input", function() {
+        var ques = $(this).val()
+        var str = "afsfd(bcd)asfasfsad(def)asdfsadf";
+        //定义正则表达式对象，\表示转义字符,原点表示任意字符，+表示出现次数至少1次，igm表示忽略大小写，且全局匹配
+        pattern = new RegExp("\\（(.| )+?\\）", "igm");
+        // console.log(ques.match(pattern))
+        var aswarr = ques.match(pattern) //答案数组
+        var oldtg = ques.split('（')
+        var tigan = [] //题干数组
+        tigan.push(ques.split('（')[0])
+        oldtg = oldtg.slice(1)
+
+        oldtg.forEach(item => {
+            tigan.push(item.split("）")[1])
+        });
+
+        var arr = [] // 
+        arr = ques.split('（')
+            // console.log(aswarr)
+        var i = 1
+        aswarr.forEach(function(item1) {
+            var answtext = item1.split('（')[1].split("）")[0]
+            console.log(answtext)
+            answtext = answtext.split('')
+            var aswHtml = ``
+            answtext.forEach(function(item2) {
+                aswHtml += `
+                            <span class="kong">
+                                <input type="text" name="${i}[]" value="${item2}">
+                            </span>
+                        `
+            })
+            tigan.splice(2 * i - 1, 0, aswHtml);
+            i++
+        })
+        console.log(tigan.join(''))
+        $(".timu").empty().append(tigan.join(''))
+
+        return false
+
+    })
+
+    // var html = foo.val();
+    // console.log(html)
+    // foo.val($(html).text());
+    $('button').click(function() {
+        var html = `
+            <span class="kong">
+                 <input type="text" name="1">
+             </span>
+        `
+        $()
+        $('.timu').append(html)
+    })
+</script>
