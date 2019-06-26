@@ -3,7 +3,7 @@
   width: 420px;
 }
 #bpindexwrap .index-mid {
-  width: 932px;
+  width: 903px;
   padding: 0 20px;
 }
 #bpindexwrap .md-class-intro {
@@ -89,7 +89,7 @@
 }
 #bpindexwrap .gonggao-bx {
   position: relative;
-  height: 392px;
+  height: 348px;
   padding-top: 63px;
   box-sizing: border-box;
   margin-top: 20px;
@@ -188,7 +188,7 @@
 }
 #bpindexwrap .swiper-bx {
   padding: 20px;
-  height: 550px;
+  height: 507px;
   box-sizing: border-box;
   background-color: #fff;
   border-radius: 10px;
@@ -220,7 +220,6 @@
 }
 #bpindexwrap .zdb-bx {
   width: 455px;
-  height: 1024px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -241,7 +240,7 @@
   display: inline-block;
 }
 #bpindexwrap .zdb-bx .zdb-list {
-  height: 927px;
+  height: 880px;
   overflow-y: auto;
   box-sizing: border-box;
   border-radius: 6px;
@@ -288,9 +287,13 @@
 .swiper-pagination-bullet-active {
   background-color: #fff;
 }
+#classwrap .swiper-container-android .swiper-slide,
+#classwrap .swiper-wrapper {
+  height: 466px;
+}
 #classwrap .ts_new {
-  width: 366px;
-  height: 320px;
+  width: 466px;
+  height: 466px;
   border-radius: 10px;
   margin-bottom: 20px;
   overflow: hidden;
@@ -301,10 +304,10 @@
   object-fit: cover;
 }
 #classwrap .ts_new .icon-laba {
-  width: 20px;
-  height: 16px;
+  width: 23px;
+  height: 20px;
   vertical-align: middle;
-  margin-right: 2px;
+  margin-right: 6px;
 }
 #classwrap .jieshao-text {
   position: absolute;
@@ -314,13 +317,11 @@
   padding: 0 10px;
   height: 34px;
   line-height: 34px;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
 }
 #classwrap .class-det {
-  height: 400px;
+  height: 494px;
   border-radius: 10px;
   background-color: #fff;
   background-size: 80% auto;
@@ -354,15 +355,16 @@
 #classwrap .class-det .cut-line {
   display: block;
   width: 300px;
-  margin: 30px auto;
+  margin: 44px auto;
 }
 #classwrap .class-det .time-show {
   display: flex;
   padding: 0 30px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 #classwrap .class-det .time-show .data-item {
+  margin-right: 30px;
   font-size: 46px;
   color: #10b4f7;
 }
@@ -373,8 +375,8 @@
   padding-top: 5px;
 }
 #classwrap .class-right {
-  width: 758px;
-  margin-left: 20px;
+  width: 1324px;
+  margin-left: 30px;
 }
 #classwrap .class-right .list-bx ul {
   display: flex;
@@ -382,8 +384,7 @@
   padding: 18px 2.6%;
 }
 #classwrap .class-right .list-bx li {
-  width: 14.6%;
-  padding: 0 1%;
+  width: 8.3%;
   text-align: center;
   margin-bottom: 8px;
 }
@@ -392,18 +393,19 @@
   text-align: center;
 }
 #classwrap .class-right .list-bx li .name-text {
-  margin-top: 14 px;
+  font-size: 16px;
+  margin-top: 20px;
 }
 #classwrap .class-right .list-base {
   border-radius: 10px;
   background-color: #fff;
 }
 #classwrap .class-right .list-base .student-list-bx {
-  height: 430px;
+  height: 544px;
   overflow-y: auto;
 }
 #classwrap .class-right .list-base .tea-list-bx {
-  height: 212px;
+  height: 336px;
   overflow-y: auto;
 }
 #classwrap .class-right .top-head {
@@ -423,13 +425,13 @@
                 normal;
 }
 #newswrap .news-left {
-  width: 755px;
+  width: 1290px;
   background-color: #fff;
   border-radius: 10px;
 }
 #newswrap .news-left .content-text {
   padding: 0 20px;
-  height: 508px;
+  height: 720px;
   overflow-y: auto;
 }
 #newswrap .news-left .content-text p {
@@ -444,6 +446,7 @@
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  padding-top: 20px;
 }
 #newswrap .news-left .btn-bx button {
   width: 100px;
@@ -462,8 +465,8 @@
   height: 100px;
 }
 #newswrap .news-right {
-  width: 369px;
-  margin-left: 20px;
+  width: 500px;
+  margin-left: 30px;
   background-color: #fff;
   border-radius: 10px;
 }
@@ -473,7 +476,7 @@
   margin: 30px;
 }
 #newswrap .news-right ul {
-  height: 650px;
+  height: 888px;
   overflow-y: auto;
 }
 #newswrap .news-right ul li {
@@ -520,8 +523,21 @@
   justify-content: space-between;
   margin-bottom: 10px;
 }
+#signinwrap .chart-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  margin-top: 100px;
+  border-top: 0.5px dashed #e9e9e9;
+}
+#signinwrap .chart-wrapper img {
+  width: 270px;
+  height: 197px;
+  margin-left: 100px;
+}
 #signinwrap .signin-left {
-  width: 561px;
+  width: 900px;
   border-radius: 10px;
   padding: 30px;
   box-sizing: border-box;
@@ -566,6 +582,7 @@
 }
 #signinwrap .signin-left .detail-bx .det-item {
   width: 50%;
+  margin-bottom: 20px;
 }
 #signinwrap .signin-left .detail-bx .det-item .det-title {
   font-size: 20px;
@@ -597,34 +614,42 @@
   background-blend-mode: normal,
                     normal;
 }
+#signinwrap .panel button {
+  border-radius: 4px;
+}
+#signinwrap .panel button.active {
+  color: #fff;
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
 #signinwrap .signing-right {
-  width: 561px;
+  width: 890px;
   padding: 30px;
   box-sizing: border-box;
-  margin-left: 20px;
+  margin-left: 30px;
   border-radius: 10px;
   background-color: #fff;
 }
 #signinwrap .signing-right .title-img {
-  height: 42px;
+  height: 50px;
   display: block;
   margin: 0 auto;
 }
 #signinwrap .signing-right .r-small-pics {
-  height: 632px;
+  height: 868px;
   overflow-y: auto;
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
 }
 #signinwrap .signing-right .r-small-pics .item-pic {
-  width: 31.33%;
+  width: 33.33%;
   padding: 0 1%;
   margin-bottom: 20px;
 }
 #signinwrap .signing-right .r-small-pics img {
-  width: 160px;
-  height: 120px;
+  width: 100%;
+  height: 180px;
   object-fit: cover;
 }
 #signinwrap .signing-right .r-small-pics .name {

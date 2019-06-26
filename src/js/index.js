@@ -55,11 +55,11 @@
     function classdet() {
         var mySwiper = new Swiper('.swiper-container', {
             loop: true, // 循环模式选项
-            autoplay: {
-                delay: 3000,
-                stopOnLastSlide: false,
-                disableOnInteraction: true,
-            },
+            // autoplay: {
+            //     delay: 3000,
+            //     stopOnLastSlide: false,
+            //     disableOnInteraction: true,
+            // },
         })
     }
 
